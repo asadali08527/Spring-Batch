@@ -8,6 +8,7 @@ import org.springframework.batch.core.configuration.annotation.StepBuilderFactor
 import org.springframework.batch.core.launch.support.RunIdIncrementer;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.batch.item.ItemReader;
+import org.springframework.batch.item.ItemStream;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.batch.item.file.FlatFileItemReader;
 import org.springframework.beans.factory.annotation.Value;
@@ -40,7 +41,5 @@ public class SpringBatchConfiguration {
 		return flatFileItemReader;
 
 	}
-
-	
 
 }
